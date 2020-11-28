@@ -33,7 +33,33 @@
 		
     </head>
     <body>
-        
+		
+		<header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logos.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html" style="color:black">HOME</a></li> 
+								<!-- <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="services.html"></a></li>  -->
+								<li class="nav-item"><a class="nav-link" href="#top" style="color:black">EDUCATION TIMELINE</a></li>
+								<li class="nav-item"><a class="nav-link" href="#top2" style="color:black">PROJECTS</a></li>
+								
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
    
         
         <!--================Home Banner Area =================-->
@@ -48,7 +74,11 @@
 							<div class="media-body">
 								<div class="personal_text">
 									<h6>Hello Everybody, I am</h6>
-									<h3>JOEL JORLY</h3>
+									<h3 class="block-effect" style="--td: 1.2s">
+										<div class="block-reveal" style="--bc: #4040bf; --d: .1s">JOEL</div>
+										<div class="block-reveal" style="--bc: #bf4060; --d: .5s">JORLY</div>
+									</h3>
+									  
 									<h4>ML Enthusiast | Front-End Dev</h4>
 									<p>Machine Learning and Data Science are 2 fields which have always captivated me. I like pushing myself and enjoy taking up new challenges.</p>
 									<ul class="list basic_info">
@@ -119,14 +149,15 @@
         </section>
         <!--================End Welcome Area =================-->
         
-        <!--================My Tabs Area =================-->
+		<!--================My Tabs Area =================-->
+		<a name="top"></a>
         <section class="mytabs_area p_120">
         	<div class="container">
         		<div class="tabs_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						
 						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">EDUCATION AND EXPERIENCE</a>
+							
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" name="top">EDUCATION AND EXPERIENCE</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -175,7 +206,7 @@
         	</div>
         </section>
         <!--================End My Tabs Area =================-->
-
+        <a name="top2"></a>
         <section class="home_gallery_area p_120">
         	<div class="container">
         		<div class="main_title">
