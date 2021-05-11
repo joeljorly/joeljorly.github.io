@@ -1,4 +1,4 @@
-My Personal Portfolio Website (Made with HTML,CSS and JS)
+My Personal Portfolio Website (Made with HTML,CSS and JS).
 
 ## Welcome to GitHub Pages
 
