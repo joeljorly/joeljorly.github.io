@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
+   <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 
    <!-- Script
    ================================================== -->
@@ -31,6 +32,7 @@
 	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
+
 
 <body>
 
@@ -55,8 +57,73 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="block-effect" style="--td: 1.2s" >
-				<div class="block-reveal" style="--bc: #4e1717; --d: .1s" font color="blue">I'm Joel Jorly</div>
+				<div class="block-reveal" style="--bc: #4e1717; --d: .1s" font color="blue">I'm Joel Jorly</div> 
 			</h1>
+			
+			
+
+<section id = "curr">
+<body>
+  <div id="typedtext"></div>
+</body>
+</section>
+
+  
+
+
+
+<script language="javascript" type="text/javascript">
+
+var aText = new Array(
+"Welcome to my portfolio", 
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
             <h3>Hello. I'm a final year student pursuing my undergraduate <span>Bachelor of Technology</span> degree with a focus on <span>Computer Science Engineering</span>. I'm deeply interested in <span>Data Science</span> and <span>Machine Learning</span>. Please<a class="smoothscroll" href="#about"> start scrolling</a>
             for more details</a>.</h3>
             <hr />
@@ -366,6 +433,24 @@ visualization dashboards<br>
       </div> <!-- End skills -->
 
    </section> <!-- Resume Section End-->
+   
+   
+   
+
+ <!-- Portfolio Heading
+   ================================================== -->
+
+<!--<section id="resume">   
+   
+  <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Works</span></h1>
+         </div>
+</div>
+</section>-->
+ 
+   
 
 
  <!-- Portfolio Section
@@ -376,7 +461,7 @@ visualization dashboards<br>
 
          <div class="twelve columns collapsed">
 
-            <h1 style="color:white">Check Out Some of My Works</h1>
+            <h1><span>Works</span></h1><br><br>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -652,7 +737,7 @@ visualization dashboards<br>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
-	      </div><!-- modal-01 End -->-->
+	      </div><!-- modal-01 End -->
 
 
       </div> <!-- row End -->

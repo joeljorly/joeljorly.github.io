@@ -24,6 +24,23 @@
 
 body { background: #0f0f0f; }
 
+
+
+
+#curr {
+  font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:20px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+}
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -482,18 +499,37 @@ ul#nav li.current a { color: #da8484; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: linear-gradient(to bottom right, black, white, black);;
+   /*background: linear-gradient(to bottom right, black, white, black);;*/
+   background: #ffffff;;
    padding-top: 90px;
    padding-bottom: 60px;
 }
+
+
+
+
+
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   /*font: 15px/24px 'opensans-semibold', sans-serif;*/
+   font: 35px/44px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: black;
 }
+
+
+#portfolio h1 span {
+   border-bottom: 3px solid #4e1717;
+   padding-bottom: 6px;
+}
+
+
+
+
+
+
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
